@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class TechJobs {
 
     static Scanner in = new Scanner(System.in);
+    private static ArrayList<HashMap<String, String>> someJobs;
 
     public static void main (String[] args) {
 
@@ -119,6 +120,7 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+        TechJobs.someJobs = someJobs;
 
         if (someJobs.isEmpty()){
             System.out.print("No Results");
